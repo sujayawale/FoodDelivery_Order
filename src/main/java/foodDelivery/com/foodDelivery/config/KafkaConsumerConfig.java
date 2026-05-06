@@ -24,7 +24,7 @@ public class KafkaConsumerConfig {
 		JsonDeserializer<OrderEvent> deserializer=
 				new JsonDeserializer<>(OrderEvent.class);
 		
-		deserializer.addTrustedPackages("foodDelivery.com.foodDelivery.dto");
+		deserializer.addTrustedPackages("*");
 		
 		Map<String, Object> config= new HashMap<String, Object>();
 		
