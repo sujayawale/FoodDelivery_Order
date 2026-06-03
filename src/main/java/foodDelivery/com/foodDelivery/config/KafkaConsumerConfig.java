@@ -18,6 +18,7 @@ import foodDelivery.com.foodDelivery.dto.OrderEvent;
 @Configuration
 public class KafkaConsumerConfig {
 	
+	@SuppressWarnings("deprecation")
 	@Bean
     public ConsumerFactory<String, OrderEvent> consumerFactory(){
     	
